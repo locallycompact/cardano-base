@@ -49,7 +49,6 @@ library
   build-depends:        aeson
                       , base
                       , cardano-binary
-                      , cborg
                       , deepseq
                       , mmorph
                       , nothunks
