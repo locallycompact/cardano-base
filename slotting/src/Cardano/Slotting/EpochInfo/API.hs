@@ -93,17 +93,17 @@ epochInfoSlotToUTCTime ei start sl =
 -------------------------------------------------------------------------------}
 
 epochInfoSize :: HasCallStack => EpochInfo m -> EpochNo -> m EpochSize
-epochInfoSize = epochInfoSize_
+epochInfoSize x y = epochInfoSize_ x y
 
 epochInfoFirst :: HasCallStack => EpochInfo m -> EpochNo -> m SlotNo
-epochInfoFirst = epochInfoFirst_
+epochInfoFirst x y = epochInfoFirst_ x y
 
 epochInfoEpoch :: HasCallStack => EpochInfo m -> SlotNo -> m EpochNo
-epochInfoEpoch = epochInfoEpoch_
+epochInfoEpoch x y = epochInfoEpoch_ x y
 
 epochInfoSlotToRelativeTime ::
   HasCallStack => EpochInfo m -> SlotNo -> m RelativeTime
-epochInfoSlotToRelativeTime = epochInfoSlotToRelativeTime_
+epochInfoSlotToRelativeTime x y = epochInfoSlotToRelativeTime_ x y
 
 {-------------------------------------------------------------------------------
   Utility
